@@ -1,0 +1,11 @@
+---
+title: About
+author: Yuri-M-Dias
+date: '2019-07-03'
+slug: en-about
+lastmod: '2019-07-03T19:00:02-03:00'
+---
+
+Written in Go.
+
+Learn more and contribute on [GitHub](https://github.com/gohugoio).

@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://ggc.yurimdias.science"
 languageCode = "en"
 
 title = "Gold, Glory and Citations"
@@ -8,10 +8,15 @@ theme = "hyde-hyde"
 # disqusShortname = "your-disqus-shortname"
 # googleAnalytics = "your-google-analytics-id"
 # enableRobotsTXT = true
-
 # summarylength = 30
-
 paginate = 10
+
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+enableEmoji = true
+
+[permalinks]
+    en = "/en/:year/:month/:slug/"
+    pt = "/pt/:year/:month/:slug/"
 
 ## Site Settings
 [params]
@@ -31,10 +36,8 @@ paginate = 10
     highlightjs = true
     highlightjsstyle = "github"
     
-    # please choose either GraphComment or Disqus or Utterances
-    #GraphCommentId = "..."
     UtterancesRepo = "Yuri-M-Dias/ggc" # https://utteranc.es/
-    UtterancesIssueTerm = "pathname" # pathname, url, title, og:title
+    UtterancesIssueTerm = "og:title" # pathname, url, title, og:title
     UtterancesTheme = "github-light" # github-light or github-dark
 
     # Table of contents
@@ -43,22 +46,39 @@ paginate = 10
 ## Social Accounts
 [params.social]
     github = "Yuri-M-Dias"
-    stackoverflow = "yuri-m-dias"
+    stackoverflow = "3312701"
     # gravatar = "your-email@example.com"
 
 ## Main Menu
 [[menu.main]]
-    name = "Posts"
+    name = "home"
     weight = 100
-    identifier = "posts"
-    url = "/posts/"
+    identifier = "home"
+    url = "/"
+[[menu.main]]
+    name = "EN"
+    weight = 200
+    identifier = "en"
+    url = "/en/"
+[[menu.main]]
+    name = "PT"
+    weight = 200
+    identifier = "pt"
+    url = "/pt/"
 [[menu.main]]
     name = "Portfolio"
     identifier = "portfolio"
     weight = 200
     url = "/portfolio/"
+# EN Menu
 [[menu.main]]
     name = "About"
     identifier = "about"
     weight = 300
-    url = "/about/"
+    url = "/en-about/"
+# PT Menu
+[[menu.main]]
+    name = "Sobre"
+    identifier = "sobre"
+    weight = 300
+    url = "/pt-sobre/"
