@@ -1,4 +1,4 @@
-baseurl = "https://ggc.yurimdias.science"
+baseurl = "https://ggc.yurimdias.science/"
 languageCode = "en"
 
 title = "Gold, Glory and Citations"
@@ -22,7 +22,7 @@ enableEmoji = true
 [params]
     author = "Yuri-M-Dias"
     title = "Gold, Glory and Citations"
-    description = "Science, engineering and related stuff."
+    description = "Science, engineering, data and everything in between."
     authorimage = "/img/hugo.png"
     dateformat = "2 Jan 2006"
 
@@ -35,7 +35,7 @@ enableEmoji = true
     # https://highlightjs.org
     highlightjs = true
     highlightjsstyle = "github"
-    
+
     UtterancesRepo = "Yuri-M-Dias/ggc" # https://utteranc.es/
     UtterancesIssueTerm = "og:title" # pathname, url, title, og:title
     UtterancesTheme = "github-light" # github-light or github-dark
